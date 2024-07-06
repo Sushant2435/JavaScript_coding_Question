@@ -1,5 +1,6 @@
 
-// Write a JavaScript function to clone an array.
+//  Write a JavaScript function to clone an array.
+
 // using spread operator
 function clone_Arr(arr) {
     return [...arr]
