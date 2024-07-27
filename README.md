@@ -6,6 +6,18 @@
 3. [What is Hoisting in JavaScript?](#q3-what-is-hoisting-in-javascript-most-asked)
 4. [What is Temporal Dead Zone?](#q4-what-is-temporal-dead-zone)
 5. [What are the differences between `let`, `var`, and `const`?](#q5-what-are-the-differences-between-let-var-and-const)
+6. [List out some key features of ES6.](#q6-list-out-some-key-features-of-es6-most-asked)
+7. [What are the limitations of arrow functions in JavaScript?](#q7-what-are-limitations-of-arrow-functions-in-javascript)
+8. [What’s the spread operator in JavaScript?](#q8-whats-the-spread-operator-in-javascript)
+9. [What is the rest operator in JavaScript?](#q9-what-is-rest-operator-in-javascript)
+10. [What are the differences between Map and Set?](#q10-what-are-the-differences-between-map-and-set)
+11. [What are modules in JavaScript?](#q11-what-are-modules-in-javascript)
+12. [What is the difference between 'Pass by Value' and 'Pass by Reference'?](#q12-what-is-the-difference-between-pass-by-value-and-pass-by-reference)
+13. [What is the difference between map and filter?](#q13-what-is-the-difference-between-map-and-filter-frequently-asked)
+14. [What is the difference between map() and forEach()?](#q14-what-is-the-difference-between-map-and-foreach-frequently-asked)
+15. [What is the difference between for-in and for-of?](#q15-what-is-the-difference-between-for-in-and-for-of)
+16. [What is the difference between find and findIndex?](#q16-what-is-the-difference-between-find-and-findindex)
+17. [What is the difference between Pure and Impure functions?](#q17-what-is-the-difference-between-pure-and-impure-functions)
 
 
    
@@ -168,7 +180,7 @@ console.log(a,b) // 1,2
 ##
 [Back to Top](#javascript-basics)
 
-### Q10What are the differences between Map and Set ?
+### Q10. What are the differences between Map and Set ?
 
 **Map**
 - Map is the collection of key value pairs
@@ -250,5 +262,143 @@ In Pass by reference, parameters passed as an arguments does not creates their o
   addToArr(arr);
   console.log(arr);  // Output: [1, 2, 3, 4]
 ```
+##
+[Back to Top](#javascript-basics)
+
+### Q13. What is the difference between map and filter ? (Frequently asked)
+- Both map and filter are useful in JavaScript when working with an arrays.
+- map transforms each element of an array and creates a new array which contains the transformed elements. whereas filter will creates a new array with only those elements which satisfies the specified condition.
+
+##
+[Back to Top](#javascript-basics)
+
+### Q14. What is the difference between map() and forEach() (Frequently asked)
+- map method is used to transform the elements of an array. Whereas forEach method is used to loop through the elements of an array.
+- map method will return a new array with the transformed values. forEach method does not return a new array.
+- map method can be used with other array methods like filter method. whereas forEach method cannot be used with other array methods as it does not return any array.
+**Map**
+```
+const numbers = [1, 2, 3, 4, 5];
+const doubled = numbers.map((number) => number * 2);
+console.log(doubled);
+// Output: [2, 4, 6, 8, 10] (creates a new array with doubled values)
+
+```
+***ForEach**
+```
+const numbers = [1, 2, 3, 4, 5];
+numbers.forEach((number) => {
+  console.log(number * 2);
+});
+// Output: 2, 4, 6, 8, 10 (but does not create a new array)
+
+```
+
+##
+[Back to Top](#javascript-basics)
+
+### Q15. What is the difference between for-in and for-of ?
+Both for-in and for-of are used to iterate over the datastructure.
+**for-in:**
+- for-in iterates over the enumerable property keys of an object.
+**for-of:**
+- for-of is used to iterate over the values of an iterable object.
+- Examples of iterable objects are array,string,nodelists etc. (for of on object returns error)
+
+##
+[Back to Top](#javascript-basics)
+
+### Q16. What is difference between find vs findIndex ?
+**find:**
+- It will return the first element of array that passes specified condition.
+```
+ function findMethod(){
+  let arr = [{id:1,name:"Sushant"},{id:2,name:"Sharma"}];
+  let data = arr.find(x=> x.id==2)
+  console.log(data)
+  }
+
+  findMethod()
+
+  Output:
+  {id:2,name:"Sharma"}
+```
+**findIndex:**
+- It will return the index of first element of an array that passes the specified condition.`
+```
+  function findMethod(){
+  let arr = [{id:1,name:"sai"},{id:2,name:"krishna"}];
+  let data = arr.findIndex(x=> x.id==2)
+  console.log(data)
+  }
+
+  findMethod()
+
+  Output:
+  2
+```
+##
+[Back to Top](#javascript-basics)
+
+### Q17. What is the difference between Pure and Impure functions?
+**Pure Functions:**
+- Pure functions are the functions which will return same output for same arguments passed to the function.
+- This will not have any side effects.
+- It does not modify any non local state.
+```
+function greeting(name) {
+  return 'Hello $ {name}';
+}
+console.log(greeting("Sushant Sharma"));
+```
+**Impure Functions:**
+-Impure functions are the functions which will return inconsistent output for same arguments passed to the function.
+-This will have side effects.
+-This will modify non local state.
+```
+  let message = "good morning";
+  function greeting1(name) {
+    return 'Hello $ {name} , $ {message}';
+  }
+  console.log(greeting1("Sushant Sharma"));
+```
+
+##
+[Back to Top](#javascript-basics)
+
+##
+[Back to Top](#javascript-basics)
+
+##
+[Back to Top](#javascript-basics)
+
+##
+[Back to Top](#javascript-basics)
+
+##
+[Back to Top](#javascript-basics)
+
+##
+[Back to Top](#javascript-basics)
+
+##
+[Back to Top](#javascript-basics)
+
+##
+[Back to Top](#javascript-basics)
+
+
+##
+[Back to Top](#javascript-basics)
+
+
+##
+[Back to Top](#javascript-basics)
+
+
+##
+[Back to Top](#javascript-basics)
+
+
 ##
 [Back to Top](#javascript-basics)
