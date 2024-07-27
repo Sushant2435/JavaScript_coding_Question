@@ -17,13 +17,27 @@
 14. [What is the difference between map() and forEach()?](#q14-what-is-the-difference-between-map-and-foreach-frequently-asked)
 15. [What is the difference between for-in and for-of?](#q15-what-is-the-difference-between-for-in-and-for-of)
 16. [What is the difference between find and findIndex?](#q16-what-is-the-difference-between-find-and-findindex)
-17. [What is the difference between Pure and Impure functions?](#what-is-the-difference-between-pure-and-impure-functions)
+17. [What is the difference between Pure and Impure functions?](#q17-what-is-the-difference-between-pure-and-impure-functions)
+18. [What are the differences between call(), apply() and bind()?](#q18-what-are-the-differences-between-call-apply-and-bind-frequently-asked)
+19. [What are the different ways to create objects in JavaScript?](#q19-what-are-the-different-ways-to-create-object-in-javascript-most-asked)
+20. [What’s the difference between Object.keys(), Object.values(), and Object.entries()?](#q20-whats-the-difference-between-objectkeys-values-and-entries)
+21. [What’s the difference between Object.freeze() and Object.seal()?](#q21-whats-the-difference-between-objectfreeze-vs-objectseal)
+22. [What is a generator function in JavaScript?](#q22-what-is-generator-function-in-javascript)
+23. [What is IIFE?](#q23-what-is-iife)
+24. [What is CORS?](#q24-what-is-cors-most-asked)
+25. [What are the differences between TypeScript and JavaScript?](#q25-what-are-the-differences-between-typescript-and-javascript)
+26. [What is the difference between authentication and authorization?](#q26-what-is-authentication-vs-authorization-most-asked)
+27. [What are the differences between null and undefined?](#q27-what-are-the-differences-between-null-and-undefined)
+28. [What is the difference between == and === in JavaScript?](#q28-what-is-the-difference-between-==and-===in-javascript)
+29. [Slice vs Splice in JavaScript?](#q29-slice-vs-splice-in-javascript-most-helpful-in-problem-solving)
+30. [What is `setTimeout` in JavaScript?](#q30-what-is-settimeout-in-javascript)
+31. [What is `setInterval` in JavaScript?](#q31-what-is-setinterval-in-javascript)
+32. [What are Promises in JavaScript?](#q32-what-are-promises-in-javascript)
+33. [What is a call stack in JavaScript?](#q33-what-is-a-call-stack-in-javascript)
+34. [What is a closure?](#q34-what-is-a-closure)
 
 
 
-
-
-   
 ### Q1. Is JavaScript a dynamically typed language or a statically typed language?
 JavaScript is a dynamically typed language. It means all type checks are done at runtime (when the program is executing). So, we can just assign anything to the variable and it works fine.
 
@@ -658,7 +672,7 @@ If we want to add/delete/replace the existing elements in the array, then we wil
 ##
 [Back to Top](#javascript-basics)
 
-### Q32. What is setTimeOut in javascript ?
+### Q30. What is setTimeOut in javascript ?
 setTimeOut is used to call a function or evaluate an expression after a specific number of milliseconds.
 ```
 setTimeOut(function(){
@@ -673,7 +687,7 @@ console.log("Prints Hello after 2 seconds")
 ##
 [Back to Top](#javascript-basics)
 
-### Q30. What is setInterval in javascript ?
+### Q31. What is setInterval in javascript ?
 setInterval method is used to call a function or evaluate an expression at specific intervals.
 ```
 setInterval(function(){
@@ -684,7 +698,7 @@ setInterval(function(){
 
 ##
 [Back to Top](#javascript-basics)
-### Q31. What are Promises in javascript ?
+### Q32. What are Promises in javascript ?
 👉 **Interview Tip:** When this is asked cover all below points so that he will not ask any other question on promises 😈.
 Promise is an object which represents the eventual completion or failure of an asynchronous operation in javascript.
 At any point of time, promise will be in any of these below states.,
@@ -708,13 +722,13 @@ promise.then(res => console.log(res)).catch(rej => console.log(rej))
 ```
 ##
 [Back to Top](#javascript-basics)
-### Q35. What is a callstack in javascript ?
+### Q33. What is a callstack in javascript ?
 - Callstack will maintain the order of execution of execution contexts.
 
 ##
 [Back to Top](#javascript-basics)
 
-### Q36. What is a closure ? (Most asked in all the interviews 99% chance)
+### Q34. What is a closure ? (Most asked in all the interviews 99% chance)
 Defination: A function along with its outer environment together forms a closure
 Each and every function in javascript has access to its outer lexical environment means access to the variables and functions present in the environments of its parents
 Even when this function is executed in some outer scope(not in original scope) it still remembers the outer lexical environment where it was originally present in the code.
