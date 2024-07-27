@@ -101,3 +101,154 @@ function somemethod() {
 👉 **Interview Tip:** Explain these features with these simple definitions to make good use of 2-3 minutes of interview time.
 ##
 [Back to Top](#javascript-basics)
+
+### Q7. What are limitations of arrow functions in javascript ?
+- Arrow functions are introduced in ES6. They are simple and shorter way to write functions in javascript.
+- Arrow functions cannot be accessed before initialization
+- Arrow function does not have access to arguments object
+- Arrow function does not have their own this. Instead, they inherit this from the surrounding code at the time the function is defined.
+- Arrow functions cannot be used as constructors. Using them with the 𝙣𝙚𝙬 keyword to create instances throws a TypeError.
+- Arrow functions cannot be used as generator functions.
+- 👉 **Note:** Arrow functions + this combination questions will be asked here. Please explore on this combinations.
+##
+[Back to Top](#javascript-basics)
+
+### Q8. What’s the spread operator in javascript ?
+Spread operator is used to spread or expand the elements of an iterable like array or string into individual elements.
+**Uses:**
+- Concatenating arrays.
+```
+let x = [1,2];
+let y = [3,4];
+let z = […x,…y]   ⇒⇒ 1,2,3,4
+```
+- Copying arrays or objects.
+```
+let a = […x] // 1,2
+```
+- Passing array of values as individual arguments to a function.
+```
+  function createExample(arg1,arg2){
+    console.log(arg1,arg2);
+  }
+
+  createExample(…a)
+```
+- **👉 Interview Tip**: Practice the above examples mentioned and showcase them in interviews to make interviewer think that you are a practical person. 😉
+##
+[Back to Top](#javascript-basics)
+
+### Q9. What is rest operator in javascript ?
+- Rest operator is used to condense multiple elements into single array or object.
+- This is useful when we dont know how many parameters a function may receive and you want to capture all of them as an array.
+```
+ function Example(...args){
+    console.log(args)
+  }
+  Example(1,2,3,4);          
+```
+##
+[Back to Top](#javascript-basics)
+
+- It is introduced in Es6.
+- It allows us to assign the object properties and array values to distinct variables.
+```
+ const user = {
+    "age": 10,
+    "name": "Sushant"
+  }
+
+ const {age,name} = user;
+ console.log(age,name) // 10,"Sushant"
+```
+```
+const [a,b] = [1,2];
+console.log(a,b) // 1,2
+```
+##
+[Back to Top](#javascript-basics)
+
+### Q10What are the differences between Map and Set ?
+
+**Map**
+- Map is the collection of key value pairs
+- Map is two dimensional
+- new Map([iterable]) – creates the map, with optional iterable (e.g. array) of [key,value] pairs for initialization.
+- map.set(key, value) – stores the value by the key, returns the map itself
+- map.get(key) – returns the value by the key, undefined if key doesn’t exist in map
+- map.has(key) – returns true if the key exists, false otherwise.
+- map.delete(key) – removes the element by the key, returns true if key existed at the moment of the call, otherwise false.
+- map.clear() – removes everything from the map.
+- map.size – returns the current element count.
+```
+  let data = new Map();
+  data.set("name","saikrishna");
+  data.set("id","1");
+  for(let item of data){
+    console.log(item)
+  }
+
+  O/P
+  ["name","saikrishna"]
+  ["id","1"]
+```
+**Set**
+- Set is a collection of unique values
+- Set is one dimensional
+- new Set([iterable]) – creates the set, and if an iterable object is provided (usually an array), copies values from it into the set.
+- set.add(value) – adds a value, returns the set itself
+- set.delete(value) – removes the value, returns true if value existed at the moment of the call, otherwise false.
+- set.has(value) – returns true if the value exists in the set, otherwise false.
+- set.clear() – removes everything from the set.
+- set.size – is the elements count.
+```
+let data = new Set();
+  data.add(1);
+  data.add(”Sushant”);
+  for(let item of data){
+    console.log(item)
+  }
+
+  O/P
+  1
+  Sushant
+```
+##
+[Back to Top](#javascript-basics)
+### Q11. What are modules in javascript ?
+- Modules allows us to break down the large piece of code into smaller parts.
+- Modules helps us to write more reusable and maintenable code.
+- Modules can be imported and exported using import and export statements.
+
+### Q12. What is the difference between 'Pass by Value' and 'Pass by Reference'?
+In JavaScript, whenever a function is called, the arguments can be passed in two ways, either pass by value or pass by reference.
+- Primitive datatypes such as string, number,boolean,null and undefined are passed by value.
+- Non -primitive datatypes such as object,arrays or functions are passed by reference.
+In Pass by value, parameters passed as an arguments creates their own copy. So any changes made inside the function are made to the copied value so it will not affect the original value.
+```
+ // Pass by value example
+  let num = 10;
+
+  function changeNum(value) {
+      value = 20;
+      console.log(value);  // Output: 20
+  }
+
+  changeNum(num);
+  console.log(num);  // Output: 10   
+```
+In Pass by reference, parameters passed as an arguments does not creates their own copy. so any changes made inside the function will affect the original value.
+```
+ // Pass by reference example
+  let arr = [1, 2, 3];
+
+  function addToArr(value) {
+      value.push(4);
+      console.log(value);  // Output: [1, 2, 3, 4]
+  }
+
+  addToArr(arr);
+  console.log(arr);  // Output: [1, 2, 3, 4]
+```
+##
+[Back to Top](#javascript-basics)
