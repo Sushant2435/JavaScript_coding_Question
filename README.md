@@ -5,7 +5,8 @@
 2. [What are the different datatypes in JavaScript?](#q2-what-are-the-different-datatypes-in-javascript-most-asked)
 3. [What is Hoisting in JavaScript?](#q3-what-is-hoisting-in-javascript-most-asked)
 4. [What is Temporal Dead Zone?](#q4-what-is-temporal-dead-zone)
-5. [What are the differences between `let`, `var`, and `const`?](#q5-differences-between-let-var-and-const)
+5. [What are the differences between `let`, `var`, and `const`?](#q5-what-are-the-differences-between-let-var-and-const)
+
 
    
 ### Q1. Is JavaScript a dynamically typed language or a statically typed language?
@@ -68,15 +69,16 @@ function somemethod() {
 [Back to Top](#javascript-basics)
 
 ### Q5. What are the differences let, var and const ? (Most asked)
-** Scope: **
+
+**Scope:**
 - Variables declared with var are function scoped.( available through out the function where its declared ) or global scoped( if defined outside the function ).
 - Variables declared with let and const are block scoped.
-** Reassignment: **
+**Reassignment:**
 - var and let can be reassigned.
 - const cannot be reassigned.
-** Hoisting: **
+**Hoisting:**
 - var gets hoisted and initialized with undefined.
 - let and const - gets hoisted to the top of the scope but does not get assigned any value.(temporal dead zone)
-
+  
 ##
 [Back to Top](#javascript-basics)
