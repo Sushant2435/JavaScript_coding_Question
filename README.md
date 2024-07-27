@@ -301,9 +301,39 @@ numbers.forEach((number) => {
 Both for-in and for-of are used to iterate over the datastructure.
 **for-in:**
 - for-in iterates over the enumerable property keys of an object.
+```
+const car = {
+    make: 'Toyota',
+    model: 'Corolla',
+    year: 2020
+};
+
+for (let key in car) {
+    console.log(`${key}: ${car[key]}`);
+}
+
+// Output:
+// make: Toyota
+// model: Corolla
+// year: 2020
+
+```
 **for-of:**
 - for-of is used to iterate over the values of an iterable object.
 - Examples of iterable objects are array,string,nodelists etc. (for of on object returns error)
+```
+const fruits = ['apple', 'banana', 'cherry'];
+
+for (let fruit of fruits) {
+    console.log(fruit);
+}
+
+// Output:
+// apple
+// banana
+// cherry
+
+```
 
 ##
 [Back to Top](#javascript-basics)
@@ -365,6 +395,55 @@ console.log(greeting("Sushant Sharma"));
 
 ##
 [Back to Top](#javascript-basics)
+### Q20. What are the differences between call(), apply() and bind() ? (Frequently asked)
+- Call method will invoke the function immediately with the given this value and allows us to pass the arguments one by one with comma separator.
+- Apply method will invoke the function immediately with given this value and allows us to pass the arguments as an array.
+- Bind method will return a new function with the given this value and arguments which can be invoked later.
+
+**Call**
+- Purpose: The call method allows you to call a function with a specified this value and arguments provided individually.
+- Usage: Use call when you want to execute a function immediately with a specific this context and pass arguments individually.
+  ```
+  function greet2(greeting, punctuation) {
+    console.log(`${greeting}, ${this.name}${punctuation}`);
+  }
+   const person2 = {
+       name: 'Aman'
+   };
+   // Using call to call greet with 'person' as 'this' and individual arguments
+   greet2.call(person2, 'Hello', '!'); // Output: Hello, Aman!
+  ```
+**Apply**
+
+- Purpose: apply is used to call a function with a given this value and arguments provided as an array (or an array-like object).
+- Usage: You use apply when you want to call a function immediately with a specific context and arguments.
+
+```
+const person = {
+    name: 'Sushant Sharma'
+};
+
+function greet(greeting, punctuation) {
+    console.log(`${greeting},${this.name},${punctuation}`)
+}
+
+greet.apply(person, ['Hello', "!"])
+```
+**Bind**
+
+- Purpose: bind creates a new function that, when called, has its this keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.
+- Usage: You use bind when you want to create a new function with a specific context and optionally pre-set arguments. The new function can be called later.
+```
+function greet1(greeting, punctuation) {
+    console.log(`${greeting},${this.name},${punctuation}`)
+}
+const person1 = {
+    name: 'Radhe Sharma'
+};
+
+const greetPerson = greet1.bind(person1, 'Hello')
+greetPerson('!')
+```
 
 ##
 [Back to Top](#javascript-basics)
