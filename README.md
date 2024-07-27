@@ -71,14 +71,33 @@ function somemethod() {
 ### Q5. What are the differences let, var and const ? (Most asked)
 
 **Scope:**
-- Variables declared with var are function scoped.( available through out the function where its declared ) or global scoped( if defined outside the function ).
-- Variables declared with let and const are block scoped.
+- Variables declared with `var` are function-scoped (available throughout the function where it's declared) or globally-scoped (if defined outside the function).
+- Variables declared with `let` and `const` are block-scoped.
+
 **Reassignment:**
-- var and let can be reassigned.
-- const cannot be reassigned.
+- `var` and `let` can be reassigned.
+- `const` cannot be reassigned.
+
 **Hoisting:**
-- var gets hoisted and initialized with undefined.
-- let and const - gets hoisted to the top of the scope but does not get assigned any value.(temporal dead zone)
+- `var` gets hoisted and initialized with `undefined`.
+- `let` and `const` are hoisted to the top of the block scope but do not get assigned any value (temporal dead zone).
   
+##
+[Back to Top](#javascript-basics)
+
+### Q6. List out some key features of ES6. (Most asked)
+
+- **Arrow Functions**: Shorter way to write functions and automatically use the `this` value from their surrounding context.
+- **Let and Const Declarations**: `let` allows you to create variables that are limited to a block, while `const` creates variables that cannot be changed after their initial value.
+- **Destructuring Assignment**: Quickly extract values from arrays or properties from objects and assign them to variables.
+- **Default Parameters**: Set default values for function parameters if no value is provided.
+- **Template Literals**: Use backticks (`` ` ``) to write strings that can include variables and span multiple lines.
+- **Spread and Rest Operators**: `...` can spread elements from an array or object, or gather multiple elements into a single array.
+- **Promises**: Handle asynchronous operations by providing a way to work with data once it's ready or deal with errors if something goes wrong.
+- **Classes**: Create objects with a clear structure and inheritance, similar to classes in other programming languages.
+- **Modules**: Organize code into separate files that can be imported and exported, making it easier to manage and reuse.
+- **Map, Set, WeakMap, WeakSet**: New data structures for storing unique values (`Set`), key-value pairs (`Map`), and weak references to objects (`WeakMap`, `WeakSet`).
+
+👉 **Interview Tip:** Explain these features with these simple definitions to make good use of 2-3 minutes of interview time.
 ##
 [Back to Top](#javascript-basics)
