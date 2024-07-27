@@ -745,7 +745,7 @@ closureFunction('I am inside');
 // Inner Variable: I am inside
 ```
 **Closures can be used to create private variables**
-
+```
 function createCounter() {
     let count = 0; // Private variable
 
@@ -769,6 +769,7 @@ console.log(counter.increment()); // Output: 1
 console.log(counter.increment()); // Output: 2
 console.log(counter.getCount()); // Output: 2
 console.log(counter.decrement()); // Output: 1
+```
 
 **Private function example**
 
