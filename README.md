@@ -17,7 +17,27 @@
 14. [What is the difference between map() and forEach()?](#q14-what-is-the-difference-between-map-and-foreach-frequently-asked)
 15. [What is the difference between for-in and for-of?](#q15-what-is-the-difference-between-for-in-and-for-of)
 16. [What is the difference between find and findIndex?](#q16-what-is-the-difference-between-find-and-findindex)
-17. [What is the difference between Pure and Impure functions?](#q17-what-is-the-difference-between-pure-and-impure-functions)
+17. [What is the difference between Pure and Impure functions?](#what-is-the-difference-between-pure-and-impure-functions)
+18. [What are Promises in JavaScript?](#what-are-promises-in-javascript)
+19. [What is async/await in JavaScript?](#what-is-asyncawait-in-javascript)
+20. [What is closure in JavaScript?](#what-is-closure-in-javascript)
+21. [What is the event loop in JavaScript?](#what-is-the-event-loop-in-javascript)
+22. [What is the difference between synchronous and asynchronous code in JavaScript?](#what-is-the-difference-between-synchronous-and-asynchronous-code-in-javascript)
+23. [What is the DOM?](#what-is-the-dom)
+24. [What are the different ways to select DOM elements in JavaScript?](#what-are-the-different-ways-to-select-dom-elements-in-javascript)
+25. [What is the difference between `==` and `===` in JavaScript?](#what-is-the-difference-between--and--in-javascript)
+26. [What is a callback function in JavaScript?](#what-is-a-callback-function-in-javascript)
+27. [What is the difference between localStorage and sessionStorage?](#what-is-the-difference-between-localstorage-and-sessionstorage)
+28. [What is the difference between `null` and `undefined` in JavaScript?](#what-is-the-difference-between-null-and-undefined-in-javascript)
+29. [What is the difference between function declarations and function expressions?](#what-is-the-difference-between-function-declarations-and-function-expressions)
+### [Q30. What are IIFEs (Immediately Invoked Function Expressions)?](#q30-what-are-iifes-immediately-invoked-function-expressions)
+### [Q31. What is the 'this' keyword in JavaScript?](#q31-what-is-the-this-keyword-in-javascript)
+### [Q32. How does 'this' behave in different contexts?](#q32-how-does-this-behave-in-different-contexts)
+### [Q33. What are arrow functions and how do they differ from regular functions?](#q33-what-are-arrow-functions-and-how-do-they-differ-from-regular-functions)
+### [Q34. What is a promise in JavaScript?](#q34-what-is-a-promise-in-javascript)
+### [Q35. How do async/await work with promises?](#q35-how-do-asyncawait-work-with-promises)
+### [Q36. What are JavaScript closures and how are they used?](#q36-what-are-javascript-closures-and-how-are-they-used)
+
 
 
    
