@@ -1,4 +1,4 @@
-## JavaScript Basics
+## JavaScript Most asked interview Questions
 
 ### Index
 1. [Is JavaScript a dynamically typed language or a statically typed language?](#q1-is-javascript-a-dynamically-typed-language-or-a-statically-typed-language)
