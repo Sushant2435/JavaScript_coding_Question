@@ -395,7 +395,7 @@ console.log(greeting("Sushant Sharma"));
 
 ##
 [Back to Top](#javascript-basics)
-### Q20. What are the differences between call(), apply() and bind() ? (Frequently asked)
+### Q18. What are the differences between call(), apply() and bind() ? (Frequently asked)
 - Call method will invoke the function immediately with the given this value and allows us to pass the arguments one by one with comma separator.
 - Apply method will invoke the function immediately with given this value and allows us to pass the arguments as an array.
 - Bind method will return a new function with the given this value and arguments which can be invoked later.
@@ -447,37 +447,344 @@ greetPerson('!')
 
 ##
 [Back to Top](#javascript-basics)
+### Q21. What are the different ways to create object in javascript ? (Most asked)
+**Object literal :**
+```
+let userDetails = {
+    name: "Sushant",
+    city: "Delhi"
+  }
+```
+**Object constructor :**
+```
+let userDetails = new Object();
+userDetails.name = "Sushant";
+userDetails.city = "Delhi";
+          
+```
+**Object.Create() :**
+- This is used when we want to inherit properties from an existing object while creating a new object.
+```
+let animal = {
+ name: "Animal name"
+}
+
+let cat = Object.create(animal);
+```
+**Object.assign() :**
+- This is used when we want to include properties from multiple other objects into new object we are creating.
+```
+let lesson = {
+    lessonName: "Data structures"
+  };
+
+  let teacher= {
+    teacher: "Sushant"
+  };
+
+  let course = Object.assign({},lesson,teacher);
+```
 
 ##
 [Back to Top](#javascript-basics)
 
-##
-[Back to Top](#javascript-basics)
+### Q22. Whats the difference between Object.keys,values and entries ?
+- Object.keys(): This will return the array of keys
+- Object.values(): This will return the array of values
+- Object.entries(): This will return array of [key,value] pairs. (Practice example for this - this might be asked)
+```
+ let data = {
+    name: "Sushant",
+    lang: "English"
+  };
+
+  Object.keys(data)  // ["name","lang"]
+  Object.values(data) // ["Sushant","english"]
+  Object.entries(data) // [["name","Sushant"],["lang","English"]]
+```
 
 ##
 [Back to Top](#javascript-basics)
 
-##
-[Back to Top](#javascript-basics)
+### Q23. Whats the difference between Object.freeze() vs Object.seal()
+**Object.freeze:**
+- Will make the object immutable ( prevents the addition of new propeties and prevents modification of existing properties)
+```
+ let data = {
+    a : 10
+  };
+
+  Object.freeze(data);
+  data.a= 20;
+  data.c = 30;
+
+  console.log(data) 
+
+  output: {
+    a: 10
+  }
+```
+
+**Object.Seal():**
+- Will prevent the addition of new properties but we can modify existing properties.
+```
+
+  let data = {
+    a : 10
+  };
+
+  Object.seal(data);
+  data.a = 20;
+  data.c = 30;
+
+  console.log(data)
+
+  Output: 
+  data: {
+    a: 20
+  }
+```
+
 
 ##
 [Back to Top](#javascript-basics)
+### Q24. What is generator function in javascript ?
+A generator function is a function which can be paused and resumed at any point during execution.
+They are defined by using function* and it contains one or more yield expressions.
+The main method of generator is next(). when called, it runs the execution until the nearest yield.
+It returns an object which contains 2 properties. i.e., done and value.
+- done: the yielded value
+- value: true if function code has finished. else false.
+```
+function* generatorFunction() {
+    yield 1;
+    yield 2;
+    yield 3;
+    return 4
+  }
+  
+  const generator = generatorFunction();
+  console.log(generator.next()); // Output: { value: 1, done: false }
+  console.log(generator.next()); // Output: { value: 2, done: false }
+  console.log(generator.next()); // Output: { value: 3, done: false }
+  console.log(generator.next()); // Output: { value: 4, done: true }
+```
+
+##
+[Back to Top](#javascript-basics)
+### Q25. What is IIFE ?
+IIFE means immediately invoked function expression.
+functions which are executed immediately once they are mounted to the stack is called iife.
+They does not require any explicit call to invoke the function.
+```
+  (function(){
+    console.log("Sushant Sharma")
+  })()
+```
+##
+[Back to Top](#javascript-basics)
+
+### Q26. What is CORS ? (Most asked)
+👉 **Interview Tip:** This defination is more than enough so prepare this below answer well.
+CORS means cross origin resource sharing.
+It is a security feature that allows the webapplications from one domain to request the resources like Api’s/scripts from another domain.
+cors works by adding specific http headers to control which origins have access to the resources and under what conditions.
+Good Reference: https://dev.to/lydiahallie/cs-visualized-cors-5b8h
+
+##
+[Back to Top](#javascript-basics)
+### Q27. What are the difference between typescript and javascript ?
+- Typescript is the superset of javascript and has all the object oriented features.
+- Javascript is a dynamically typed language whereas typescript is a statically typed language.
+- Typescript is better suited for large scale applications where as javascript is suited for small scale applications.
+- Typescript points out the compilation errors at the time of development. Because of this, getting runtime errors is less likely.
+- Typescript supports interfaces whereas javascript does not.
+- Functions have optional parameters in typescript whereas in javascript does not have it.
+- Typescript takes longer time to compile code.
+👉 **Interview Tip:** If your interview contains typescript then this is a 99% dam sure question. Prepare these differences blindly.
+
 
 ##
 [Back to Top](#javascript-basics)
 
+### Q28. What is authentication vs authorization ? (Most asked)
+
+**Authentication:**
+Its the process of verifying who the user is.
+**Authorization:**
+Its the process of verifying what they have access to. What files and data user has access to.
+👉 **Interview Tip:** For this question, learn **jwt token mechanism** and tell that you have implemented this in your project. This helps a lot.This kills atleast 3-4 min of interview time 😉
+Good Reference: https://www.youtube.com/watch?v=7Q17ubqLfaM
+
+
+##
+[Back to Top](#javascript-basics)
+### Q29. What are the differences between null and undefined ?
+**Null:**
+If we assign null to a variable, it means it will not have any value
+**Undefined:**
+means the variable has been declared but not assigned any value yet.
 
 ##
 [Back to Top](#javascript-basics)
 
+### Q30. What is the difference between == and === in javascript ?
+== will check for equality of values where as === willl check for equality as well as datatypes.
+##
+[Back to Top](#javascript-basics)
+
+### Q31. Slice vs Splice in javascript ? (Most helpful in problem solving)
+**Slice:**
+If we want to create an array that is subset of existing array with out changing the original array, then we will use slice.
+```
+let arr = [1,2,3,4];
+let newArr = arr.slice(1,3);
+
+console.log(newArr) // [2,3]
+```
+**Splice:**
+If we want to add/delete/replace the existing elements in the array, then we will use splice.
+```
+  let arr = [1,2,3,4,5,0,10];
+  let newArr = arr.splice(2,4,8,9,6);
+  // splice(startIndex,numberOfItemsToRemove,replaceElements)
+
+  console.log(arr); //  [1,2,8,9,6,10]
+  console.log(newArr); // [3,4,5,0]
+```
+##
+[Back to Top](#javascript-basics)
+
+### Q32. What is setTimeOut in javascript ?
+setTimeOut is used to call a function or evaluate an expression after a specific number of milliseconds.
+```
+setTimeOut(function(){
+console.log("Prints Hello after 2 seconds")
+},2000);
+
+// Logs message after 2 seconds
+```
+👉 **Interview Tip:** Most asked in output based and problem solving so learn syntax more. Practice some examples.
+
 
 ##
 [Back to Top](#javascript-basics)
 
+### Q33. What is setInterval in javascript ?
+setInterval method is used to call a function or evaluate an expression at specific intervals.
+```
+setInterval(function(){
+   console.log("Prints Hello after every 2 seconds");
+},2000);
+```
+👉 **Interview Tip:** Most asked in output based and problem solving so learn syntax more. Practice some examples.
+
+##
+[Back to Top](#javascript-basics)
+### Q34. What are Promises in javascript ?
+👉 **Interview Tip:** When this is asked cover all below points so that he will not ask any other question on promises 😈.
+Promise is an object which represents the eventual completion or failure of an asynchronous operation in javascript.
+At any point of time, promise will be in any of these below states.,
+- Fulfilled: Action related to promise is succeded.
+- Rejected: Action related to the promise is failed.
+- Pending: Promise is neither fulfilled nor rejected
+Promise can be consumed by registering the functions using .then() and .catch() methods.
+```
+let promise = new Promise((res, rej) => {
+    setTimeout(() => {
+        let age = 21;
+        if (age > 30) {
+            res("you eligible")
+        } else {
+            rej("not eligible")
+        }
+    }, 2000)
+})
+
+promise.then(res => console.log(res)).catch(rej => console.log(rej))
+```
+##
+[Back to Top](#javascript-basics)
+### Q35. What is a callstack in javascript ?
+- Callstack will maintain the order of execution of execution contexts.
 
 ##
 [Back to Top](#javascript-basics)
 
+### Q36. What is a closure ? (Most asked in all the interviews 99% chance)
+Defination: A function along with its outer environment together forms a closure
+Each and every function in javascript has access to its outer lexical environment means access to the variables and functions present in the environments of its parents
+Even when this function is executed in some outer scope(not in original scope) it still remembers the outer lexical environment where it was originally present in the code.
+```
+function Outer(){
+      var a = 10;
+      function Inner(){
+        console.log(a);
+      }
+      return Inner;
+  }
 
-##
+  var Close = Outer();
+  Close();
+```
+- Lexical Scope: Closures leverage the lexical scoping of variables. A function can access variables defined in its outer function even after the outer function has returned.
+
+- Encapsulation: Closures can be used to create private variables and functions that are not accessible from outside the function.
+```
+function outerFunction(outerVariable) {
+    return function innerFunction(innerVariable) {
+        console.log(`Outer Variable: ${outerVariable}`);
+        console.log(`Inner Variable: ${innerVariable}`);
+    };
+}
+
+const closureFunction = outerFunction('I am outside');
+closureFunction('I am inside');
+// Output:
+// Outer Variable: I am outside
+// Inner Variable: I am inside
+```
+**Closures can be used to create private variables**
+
+function createCounter() {
+    let count = 0; // Private variable
+
+    return {
+        increment: function () {
+            count++;
+            return count;
+        },
+        decrement: function () {
+            count--;
+            return count;
+        },
+        getCount: function () {
+            return count;
+        }
+    };
+}
+
+const counter = createCounter();
+console.log(counter.increment()); // Output: 1
+console.log(counter.increment()); // Output: 2
+console.log(counter.getCount()); // Output: 2
+console.log(counter.decrement()); // Output: 1
+
+**Private function example**
+
+```
+function createPerson(name) {
+    // Private function
+    function greet() {
+        return `Hello, my name is ${name}.`;
+    }
+
+    // Public function
+    return {
+        introduce: function () {
+            return greet(); // Uses the private function
+        }
+    };
+}
+```
 [Back to Top](#javascript-basics)
