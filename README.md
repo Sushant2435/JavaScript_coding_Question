@@ -18,25 +18,8 @@
 15. [What is the difference between for-in and for-of?](#q15-what-is-the-difference-between-for-in-and-for-of)
 16. [What is the difference between find and findIndex?](#q16-what-is-the-difference-between-find-and-findindex)
 17. [What is the difference between Pure and Impure functions?](#what-is-the-difference-between-pure-and-impure-functions)
-18. [What are Promises in JavaScript?](#what-are-promises-in-javascript)
-19. [What is async/await in JavaScript?](#what-is-asyncawait-in-javascript)
-20. [What is closure in JavaScript?](#what-is-closure-in-javascript)
-21. [What is the event loop in JavaScript?](#what-is-the-event-loop-in-javascript)
-22. [What is the difference between synchronous and asynchronous code in JavaScript?](#what-is-the-difference-between-synchronous-and-asynchronous-code-in-javascript)
-23. [What is the DOM?](#what-is-the-dom)
-24. [What are the different ways to select DOM elements in JavaScript?](#what-are-the-different-ways-to-select-dom-elements-in-javascript)
-25. [What is the difference between `==` and `===` in JavaScript?](#what-is-the-difference-between--and--in-javascript)
-26. [What is a callback function in JavaScript?](#what-is-a-callback-function-in-javascript)
-27. [What is the difference between localStorage and sessionStorage?](#what-is-the-difference-between-localstorage-and-sessionstorage)
-28. [What is the difference between `null` and `undefined` in JavaScript?](#what-is-the-difference-between-null-and-undefined-in-javascript)
-29. [What is the difference between function declarations and function expressions?](#what-is-the-difference-between-function-declarations-and-function-expressions)
-### [Q30. What are IIFEs (Immediately Invoked Function Expressions)?](#q30-what-are-iifes-immediately-invoked-function-expressions)
-### [Q31. What is the 'this' keyword in JavaScript?](#q31-what-is-the-this-keyword-in-javascript)
-### [Q32. How does 'this' behave in different contexts?](#q32-how-does-this-behave-in-different-contexts)
-### [Q33. What are arrow functions and how do they differ from regular functions?](#q33-what-are-arrow-functions-and-how-do-they-differ-from-regular-functions)
-### [Q34. What is a promise in JavaScript?](#q34-what-is-a-promise-in-javascript)
-### [Q35. How do async/await work with promises?](#q35-how-do-asyncawait-work-with-promises)
-### [Q36. What are JavaScript closures and how are they used?](#q36-what-are-javascript-closures-and-how-are-they-used)
+
+
 
 
 
@@ -467,7 +450,7 @@ greetPerson('!')
 
 ##
 [Back to Top](#javascript-basics)
-### Q21. What are the different ways to create object in javascript ? (Most asked)
+### Q19. What are the different ways to create object in javascript ? (Most asked)
 **Object literal :**
 ```
 let userDetails = {
@@ -508,7 +491,7 @@ let lesson = {
 ##
 [Back to Top](#javascript-basics)
 
-### Q22. Whats the difference between Object.keys,values and entries ?
+### Q20. Whats the difference between Object.keys,values and entries ?
 - Object.keys(): This will return the array of keys
 - Object.values(): This will return the array of values
 - Object.entries(): This will return array of [key,value] pairs. (Practice example for this - this might be asked)
@@ -526,7 +509,7 @@ let lesson = {
 ##
 [Back to Top](#javascript-basics)
 
-### Q23. Whats the difference between Object.freeze() vs Object.seal()
+### Q21. Whats the difference between Object.freeze() vs Object.seal()
 **Object.freeze:**
 - Will make the object immutable ( prevents the addition of new propeties and prevents modification of existing properties)
 ```
@@ -568,7 +551,7 @@ let lesson = {
 
 ##
 [Back to Top](#javascript-basics)
-### Q24. What is generator function in javascript ?
+### Q22. What is generator function in javascript ?
 A generator function is a function which can be paused and resumed at any point during execution.
 They are defined by using function* and it contains one or more yield expressions.
 The main method of generator is next(). when called, it runs the execution until the nearest yield.
@@ -592,7 +575,7 @@ function* generatorFunction() {
 
 ##
 [Back to Top](#javascript-basics)
-### Q25. What is IIFE ?
+### Q23. What is IIFE ?
 IIFE means immediately invoked function expression.
 functions which are executed immediately once they are mounted to the stack is called iife.
 They does not require any explicit call to invoke the function.
@@ -604,7 +587,7 @@ They does not require any explicit call to invoke the function.
 ##
 [Back to Top](#javascript-basics)
 
-### Q26. What is CORS ? (Most asked)
+### Q24. What is CORS ? (Most asked)
 👉 **Interview Tip:** This defination is more than enough so prepare this below answer well.
 CORS means cross origin resource sharing.
 It is a security feature that allows the webapplications from one domain to request the resources like Api’s/scripts from another domain.
@@ -613,7 +596,7 @@ Good Reference: https://dev.to/lydiahallie/cs-visualized-cors-5b8h
 
 ##
 [Back to Top](#javascript-basics)
-### Q27. What are the difference between typescript and javascript ?
+### Q25. What are the difference between typescript and javascript ?
 - Typescript is the superset of javascript and has all the object oriented features.
 - Javascript is a dynamically typed language whereas typescript is a statically typed language.
 - Typescript is better suited for large scale applications where as javascript is suited for small scale applications.
@@ -627,7 +610,7 @@ Good Reference: https://dev.to/lydiahallie/cs-visualized-cors-5b8h
 ##
 [Back to Top](#javascript-basics)
 
-### Q28. What is authentication vs authorization ? (Most asked)
+### Q26. What is authentication vs authorization ? (Most asked)
 
 **Authentication:**
 Its the process of verifying who the user is.
@@ -639,7 +622,7 @@ Good Reference: https://www.youtube.com/watch?v=7Q17ubqLfaM
 
 ##
 [Back to Top](#javascript-basics)
-### Q29. What are the differences between null and undefined ?
+### Q27. What are the differences between null and undefined ?
 **Null:**
 If we assign null to a variable, it means it will not have any value
 **Undefined:**
@@ -648,12 +631,12 @@ means the variable has been declared but not assigned any value yet.
 ##
 [Back to Top](#javascript-basics)
 
-### Q30. What is the difference between == and === in javascript ?
+### Q28. What is the difference between == and === in javascript ?
 == will check for equality of values where as === willl check for equality as well as datatypes.
 ##
 [Back to Top](#javascript-basics)
 
-### Q31. Slice vs Splice in javascript ? (Most helpful in problem solving)
+### Q29. Slice vs Splice in javascript ? (Most helpful in problem solving)
 **Slice:**
 If we want to create an array that is subset of existing array with out changing the original array, then we will use slice.
 ```
@@ -690,7 +673,7 @@ console.log("Prints Hello after 2 seconds")
 ##
 [Back to Top](#javascript-basics)
 
-### Q33. What is setInterval in javascript ?
+### Q30. What is setInterval in javascript ?
 setInterval method is used to call a function or evaluate an expression at specific intervals.
 ```
 setInterval(function(){
@@ -701,7 +684,7 @@ setInterval(function(){
 
 ##
 [Back to Top](#javascript-basics)
-### Q34. What are Promises in javascript ?
+### Q31. What are Promises in javascript ?
 👉 **Interview Tip:** When this is asked cover all below points so that he will not ask any other question on promises 😈.
 Promise is an object which represents the eventual completion or failure of an asynchronous operation in javascript.
 At any point of time, promise will be in any of these below states.,
