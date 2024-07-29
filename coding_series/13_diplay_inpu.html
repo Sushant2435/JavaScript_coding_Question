@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a JavaScript program to add items to a blank array and display them.</title>
+</head>
+
+<body>
+    <input id="add_item" type="text" name="">
+    <button onclick="addItem()">Add</button>
+    <button onclick="displayItem()">Display</button>
+    <p id="text_added"></p>
+
+
+</body>
+<script>
+    let arr = [];
+
+    function addItem() {
+        let item = document.getElementById("add_item").value;
+        arr.push(item);
+        document.getElementById("add_item").value = "";
+        displayItem();
+
+    }
+    
+    function displayItem() {
+        let displayDiv = document.getElementById("text_added");
+        displayDiv.innerHTML = arr.map((item, index) => `Element ${index + 1} is ${item}`).join('<br>');
+    }
+</script>
+
+</html>

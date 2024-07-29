@@ -49,7 +49,7 @@ a = "Hello";
 console.log(a); // "Hello";
 ```
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 
 ### Q2. What are the different datatypes in JavaScript? (Most asked)
 
@@ -67,7 +67,7 @@ console.log(a); // "Hello";
 - Object
 - Date
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 
 ### Q3. What is Hoisting in JavaScript? (Most asked)
 - In other scripting/server side languages, variables or functions must be declared before using it.
@@ -81,7 +81,7 @@ console.log(a); // "Hello";
   - let and const - Hoisted but not initialized. (Temporal dead zone).
   - class declarations - Hoisted but not initialized.
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 
 ### Q4. What is temporal dead zone ?
 - It is a specific time period in the execution of javascript code where the variables declared with let and const exists but cannot be accessed until the value is assigned.
@@ -95,7 +95,7 @@ function somemethod() {
   }
 ```
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 
 ### Q5. What are the differences let, var and const ? (Most asked)
 
@@ -112,7 +112,7 @@ function somemethod() {
 - `let` and `const` are hoisted to the top of the block scope but do not get assigned any value (temporal dead zone).
   
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 
 ### Q6. List out some key features of ES6. (Most asked)
 
@@ -129,7 +129,7 @@ function somemethod() {
 
 👉 **Interview Tip:** Explain these features with these simple definitions to make good use of 2-3 minutes of interview time.
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 
 ### Q7. What are limitations of arrow functions in javascript ?
 - Arrow functions are introduced in ES6. They are simple and shorter way to write functions in javascript.
@@ -140,7 +140,7 @@ function somemethod() {
 - Arrow functions cannot be used as generator functions.
 - 👉 **Note:** Arrow functions + this combination questions will be asked here. Please explore on this combinations.
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 
 ### Q8. What’s the spread operator in javascript ?
 Spread operator is used to spread or expand the elements of an iterable like array or string into individual elements.
@@ -165,7 +165,7 @@ let a = […x] // 1,2
 ```
 - **👉 Interview Tip**: Practice the above examples mentioned and showcase them in interviews to make interviewer think that you are a practical person. 😉
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 
 ### Q9. What is rest operator in javascript ?
 - Rest operator is used to condense multiple elements into single array or object.
@@ -177,7 +177,7 @@ let a = […x] // 1,2
   Example(1,2,3,4);          
 ```
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 
 - It is introduced in Es6.
 - It allows us to assign the object properties and array values to distinct variables.
@@ -195,7 +195,7 @@ const [a,b] = [1,2];
 console.log(a,b) // 1,2
 ```
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 
 ### Q10. What are the differences between Map and Set ?
 
@@ -243,7 +243,7 @@ let data = new Set();
   Sushant
 ```
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 ### Q11. What are modules in javascript ?
 - Modules allows us to break down the large piece of code into smaller parts.
 - Modules helps us to write more reusable and maintenable code.
@@ -280,14 +280,14 @@ In Pass by reference, parameters passed as an arguments does not creates their o
   console.log(arr);  // Output: [1, 2, 3, 4]
 ```
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 
 ### Q13. What is the difference between map and filter ? (Frequently asked)
 - Both map and filter are useful in JavaScript when working with an arrays.
 - map transforms each element of an array and creates a new array which contains the transformed elements. whereas filter will creates a new array with only those elements which satisfies the specified condition.
 
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 
 ### Q14. What is the difference between map() and forEach() (Frequently asked)
 - map method is used to transform the elements of an array. Whereas forEach method is used to loop through the elements of an array.
@@ -312,7 +312,7 @@ numbers.forEach((number) => {
 ```
 
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 
 ### Q15. What is the difference between for-in and for-of ?
 Both for-in and for-of are used to iterate over the datastructure.
@@ -353,7 +353,7 @@ for (let fruit of fruits) {
 ```
 
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 
 ### Q16. What is difference between find vs findIndex ?
 **find:**
@@ -385,7 +385,7 @@ for (let fruit of fruits) {
   2
 ```
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 
 ### Q17. What is the difference between Pure and Impure functions?
 **Pure Functions:**
@@ -411,7 +411,7 @@ console.log(greeting("Sushant Sharma"));
 ```
 
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 ### Q18. What are the differences between call(), apply() and bind() ? (Frequently asked)
 - Call method will invoke the function immediately with the given this value and allows us to pass the arguments one by one with comma separator.
 - Apply method will invoke the function immediately with given this value and allows us to pass the arguments as an array.
@@ -463,7 +463,7 @@ greetPerson('!')
 ```
 
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 ### Q19. What are the different ways to create object in javascript ? (Most asked)
 **Object literal :**
 ```
@@ -503,7 +503,7 @@ let lesson = {
 ```
 
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 
 ### Q20. Whats the difference between Object.keys,values and entries ?
 - Object.keys(): This will return the array of keys
@@ -521,7 +521,7 @@ let lesson = {
 ```
 
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 
 ### Q21. Whats the difference between Object.freeze() vs Object.seal()
 **Object.freeze:**
@@ -564,7 +564,7 @@ let lesson = {
 
 
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 ### Q22. What is generator function in javascript ?
 A generator function is a function which can be paused and resumed at any point during execution.
 They are defined by using function* and it contains one or more yield expressions.
@@ -588,7 +588,7 @@ function* generatorFunction() {
 ```
 
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 ### Q23. What is IIFE ?
 IIFE means immediately invoked function expression.
 functions which are executed immediately once they are mounted to the stack is called iife.
@@ -599,7 +599,7 @@ They does not require any explicit call to invoke the function.
   })()
 ```
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 
 ### Q24. What is CORS ? (Most asked)
 👉 **Interview Tip:** This defination is more than enough so prepare this below answer well.
@@ -609,7 +609,7 @@ cors works by adding specific http headers to control which origins have access 
 Good Reference: https://dev.to/lydiahallie/cs-visualized-cors-5b8h
 
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 ### Q25. What are the difference between typescript and javascript ?
 - Typescript is the superset of javascript and has all the object oriented features.
 - Javascript is a dynamically typed language whereas typescript is a statically typed language.
@@ -622,7 +622,7 @@ Good Reference: https://dev.to/lydiahallie/cs-visualized-cors-5b8h
 
 
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 
 ### Q26. What is authentication vs authorization ? (Most asked)
 
@@ -635,7 +635,7 @@ Good Reference: https://www.youtube.com/watch?v=7Q17ubqLfaM
 
 
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 ### Q27. What are the differences between null and undefined ?
 **Null:**
 If we assign null to a variable, it means it will not have any value
@@ -643,12 +643,12 @@ If we assign null to a variable, it means it will not have any value
 means the variable has been declared but not assigned any value yet.
 
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 
 ### Q28. What is the difference between == and === in javascript ?
 == will check for equality of values where as === willl check for equality as well as datatypes.
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 
 ### Q29. Slice vs Splice in javascript ? (Most helpful in problem solving)
 **Slice:**
@@ -670,7 +670,7 @@ If we want to add/delete/replace the existing elements in the array, then we wil
   console.log(newArr); // [3,4,5,0]
 ```
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 
 ### Q30. What is setTimeOut in javascript ?
 setTimeOut is used to call a function or evaluate an expression after a specific number of milliseconds.
@@ -685,7 +685,7 @@ console.log("Prints Hello after 2 seconds")
 
 
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 
 ### Q31. What is setInterval in javascript ?
 setInterval method is used to call a function or evaluate an expression at specific intervals.
@@ -697,7 +697,7 @@ setInterval(function(){
 👉 **Interview Tip:** Most asked in output based and problem solving so learn syntax more. Practice some examples.
 
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 ### Q32. What are Promises in javascript ?
 👉 **Interview Tip:** When this is asked cover all below points so that he will not ask any other question on promises 😈.
 Promise is an object which represents the eventual completion or failure of an asynchronous operation in javascript.
@@ -721,12 +721,12 @@ let promise = new Promise((res, rej) => {
 promise.then(res => console.log(res)).catch(rej => console.log(rej))
 ```
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 ### Q33. What is a callstack in javascript ?
 - Callstack will maintain the order of execution of execution contexts.
 
 ##
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
 
 ### Q34. What is a closure ? (Most asked in all the interviews 99% chance)
 Defination: A function along with its outer environment together forms a closure
@@ -805,4 +805,4 @@ function createPerson(name) {
     };
 }
 ```
-[Back to Top](#javascript-basics)
+[Back to Top](#javascript-most-asked-interview-questions)
