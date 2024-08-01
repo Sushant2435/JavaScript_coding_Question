@@ -18,7 +18,6 @@ class University {
         } else {
             console.log(`Department "${department}" does not exist in ${this.name}.`);
         }
-
     }
     display() {
         console.log(`Departments in ${this.uni_name}:`);

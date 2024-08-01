@@ -1,5 +1,6 @@
 
 // Write a JavaScript program to display the colors in the following way :
+
 const color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
 
 color.forEach((colors, index) => {

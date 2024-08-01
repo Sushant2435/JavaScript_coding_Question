@@ -1,5 +1,6 @@
 // <!-- Abstraction: Abstraction means displaying only essential information and hiding the details. Data abstraction refers to providing only essential information about the data to the outside world, hiding the background details or implementation.  -->
 // Encapsulation: The process of wrapping properties and functions within a single unit is known as encapsulation. 
+
 // Encapsulation example
 class person {
     constructor(name, id) {
