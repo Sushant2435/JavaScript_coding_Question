@@ -12,7 +12,6 @@ const array2 = [4, 5, 6];
 const resultarr = [...array1]; // Copies elements of array1 into resultarr
 const combinedArray = [...array1, ...array2];
 
-
 // Object spread
 const obj1 = { a: 1, b: 2 };
 const obj2 = { ...obj1 };

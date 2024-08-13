@@ -1,3 +1,12 @@
+// 1 pending 
+// 2. resolve/reject 
+// 3. error state 
+
+// these above three state are in promises in js
+
+
+// ....  .. .. . .. . .. .  .. 
+
 // let promise = new Promise((resolve, reject) => {
 //     setTimeout(() => {
 //         let age = 21
