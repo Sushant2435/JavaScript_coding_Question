@@ -11,19 +11,18 @@ const findUniqueElements = (arr) => {
     const elementCount = {};
 
     // Step 1: Count the occurrences of each element in the array
-    for (let i = 0; i < arr.length; i++) {
-        if (elementCount[arr[i]]) {
-            elementCount[arr[i]]++;
+    for (const element of arr) {
+        if (elementCount[element]) {
+            elementCount[element]++;
         } else {
-            elementCount[arr[i]] = 1;
+            elementCount[element] = 1;
         }
     }
-
     // Step 2: Collect all elements that appear only once
     const uniqueElements = [];
-    for (let i = 0; i < arr.length; i++) {
-        if (elementCount[arr[i]] === 1) {
-            uniqueElements.push(arr[i]);
+    for (const element of arr) {
+        if (elementCount[element] === 1) {
+            uniqueElements.push(element);
         }
     }
 

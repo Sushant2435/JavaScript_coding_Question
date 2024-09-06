@@ -6,7 +6,6 @@ class person {
     constructor(name, id) {
         this.name = name;
         this.id = id;
-
     }
     add_Address(add) {
         this.add = add;
@@ -30,8 +29,7 @@ function Student(fname, lname) {
         return (`First name is: ${firstname} Last 
             name is: ${lastname}`);
     }
-
-    this.getDetails_access = function () {
+    this.getDetails_access = function () {  
         return (`First name is: ${firstname}, Last 
             name is: ${lastname}`);
     }

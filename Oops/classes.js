@@ -1,18 +1,16 @@
 // Classes - Classes are blueprints of an Object. A class can have many Objects because the class is a template while Objects are instances of the class or the concrete implementation. 
 
-//Object - An Object is a unique entity that contains properties and methods. For example “a car” is a real-life Object, which has some characteristics like color, type, model, and horsepower and performs certain actions like driving. The characteristics of an Object are called Properties in Object-Oriented Programming and the actions are called methods
+//Object - Objects are the instances of a class that are created to use the attributes and methods of a class
 
 class Details {
     constructor(name, age) {
         this.name = name;
         this.age = age;
-
     }
     getDetails() {
         console.log(`Name is ${this.name} and age is ${this.age}`)
     }
 }
-
 const obj = new Details("Sushant", 21)
 obj.getDetails()
 

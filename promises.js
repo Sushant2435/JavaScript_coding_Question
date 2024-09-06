@@ -4,8 +4,7 @@
 
 // these above three state are in promises in js
 
-
-// ....  .. .. . .. . .. .  .. 
+// ....  .. ..  . .. . .. .  .. 
 
 // let promise = new Promise((resolve, reject) => {
 //     setTimeout(() => {
@@ -47,5 +46,4 @@ let promise = new Promise((res, rej) => {
         }
     }, 2000)
 })
-
 promise.then(res => console.log(res)).catch(rej => console.log(rej))

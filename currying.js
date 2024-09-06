@@ -1,3 +1,20 @@
+// Suppose you want some operation do when all parameter availble , when you not pass any one parameter during invoke then it will return a function
+
+// Practical example - Sent automatic email
+
+function sendEmail(to) {
+    return function (subject) {
+        return function (body) {
+            console.log(`Sending Email to ${to} with subject ${subject}\nand information is: ${body}`)
+        }
+    }
+}
+
+let step1 = sendEmail('abcd@gmail.com');
+let step2 = step1('New order confirmation');
+step2("this is about body data");
+
+
 function curriedMultiply(a) {
     return function (b) {
         return function (c) {

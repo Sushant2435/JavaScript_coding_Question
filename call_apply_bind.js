@@ -12,7 +12,7 @@ const person2 = {
 };
 
 // Using call to call greet with 'person' as 'this' and individual arguments
-greet2.call(person2, 'Hello', '!'); // Output: Hello, Alice!
+greet2.call(person2, 'Hello', '!'); // Output: Hello, Aman!
 
 
 // apply...................

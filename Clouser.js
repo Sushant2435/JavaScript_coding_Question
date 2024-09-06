@@ -1,3 +1,9 @@
+// Def.--- A clouser is the combination of function bundled together with reference to its sorrounding state 
+// A clouser gives you access to an outer function scope from an inner function.
+//Example : Suppose you have a div text and you want to increase size in particular order by multiplaying or adding in outer(parent) parent properties
+//example 2 : memoziation;
+
+
 // Lexical Scope: Closures leverage the lexical scoping of variables. A function can access variables defined in its outer function even after the outer function has returned.
 
 // Encapsulation: Closures can be used to create private variables and functions that are not accessible from outside the function.
@@ -60,4 +66,17 @@ function createPerson(name) {
 
 const person = createPerson('Alice');
 console.log(person.introduce()); // Output: Hello, my name is Alice.
-console.log(person.greet());    // Output: TypeError: person.greet is not a function
+// console.log(person.greet());    // Output: TypeError: person.greet is not a function
+
+
+
+function sumConstant(num) {
+    return function (val) {
+        console.log(num + val)
+    }
+}
+
+const fn = sumConstant(5);
+const fn1 = sumConstant(6);
+fn(2)
+fn1(3)

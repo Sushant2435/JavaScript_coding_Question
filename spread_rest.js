@@ -42,5 +42,25 @@ function sum(...arr) {
 }
 console.log(sum(1, 2, 3))
 
+
+// importent
+
 // Spread: Used to unpack elements (arrays/objects) into individual elements/properties.
 // Rest: Used to gather elements (function arguments) into an array.
+
+
+// example...........
+function sum1(...array) { // rest
+    let s = 0;
+    for (const ele of array) {
+        s += ele
+    }
+    return s
+
+}
+const arr1 = [2, 3, 4]
+console.log(sum1(...arr1)) // spread
+
+setTimeout(() => {
+    console.log("hello")
+}, 2000)
